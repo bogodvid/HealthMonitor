@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основні кольори -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#BB86FC</color>
+    <color name="purple_200">#BB86FC</color>
+
+    <!-- Primary colors - Ніч -->
+    <color name="primary_blue">#1E88E5</color>
+    <color name="primary_blue_dark">#0D47A1</color>
+
+    <!-- Surface colors - Ніч -->
+    <color name="surface_white">#121212</color>
+    <color name="background_light">#121212</color>
+    <color name="card_background">#1E1E1E</color>
+
+    <!-- Health colors -->
+    <color name="health_green">#66BB6A</color>
+    <color name="health_orange">#FFA726</color>
+    <color name="health_red">#EF5350</color>
+
+    <!-- Text colors - Ніч -->
+    <color name="text_primary">#E0E0E0</color>
+    <color name="text_secondary">#AAAAAA</color>
+
+    <!-- Button colors -->
+    <color name="button_primary">#1E88E5</color>
+    <color name="button_secondary">#FFA726</color>
+</resources>

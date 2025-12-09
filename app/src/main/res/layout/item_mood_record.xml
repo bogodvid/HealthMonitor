@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Емоджі -->
+        <TextView
+            android:id="@+id/tvMoodEmoji"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            tools:text="😄"/>
+
+        <!-- Інфо про настрій -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Дата і час -->
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginBottom="4dp"
+                tools:text="28.10.2025, 14:30"/>
+
+            <!-- Текст настрою -->
+            <TextView
+                android:id="@+id/tvMoodText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginBottom="8dp"
+                tools:text="Чудово"/>
+
+            <!-- НОВИЙ: Теги (що відчуваєте) -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                app:chipSpacing="4dp">
+                <!-- Додаються динамічно -->
+            </com.google.android.material.chip.ChipGroup>
+
+            <!-- НОВИЙ: Фактори (що вплинуло) -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupFactors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                app:chipSpacing="4dp">
+                <!-- Додаються динамічно -->
+            </com.google.android.material.chip.ChipGroup>
+
+            <!-- Нотатка -->
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="?android:textColorSecondary"
+                android:lineSpacingMultiplier="1.2"
+                android:visibility="gone"
+                tools:text="Сьогодні був чудовий день!"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

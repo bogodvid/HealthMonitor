@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HealthMonitor</string>
+    <string name="welcome_message">Ласкаво просимо до HealthMonitor!</string>
+    <string name="enter_name">Введіть ваше ім\'я</string>
+    <string name="start_using">Почати використання</string>
+    <string name="step_counter">Крокомір</string>
+    <string name="pulse_meter">Пульсомір</string>
+    <string name="settings">Налаштування</string>
+    <string name="history">Історія</string>
+    <string name="export_data">Експортувати дані</string>
+    <string name="import_data">Імпортувати дані</string>
+    <string name="steps">кроків</string>
+    <string name="total_steps">Загалом: %d</string>
+    <string name="bpm">%d BPM</string>
+    <string name="normal">Нормальний</string>
+    <string name="low">Низький</string>
+    <string name="high">Високий</string>
+    <string name="elevated">Підвищений</string>
+    <!-- НОВИЙ: Для історії сну -->
+    <string name="sleep_statistics">📊 Статистика сну</string>
+    <string name="average_sleep">Середня тривалість: --</string>
+    <string name="sleep_history_title">Історія за останні 30 днів</string>
+    <string name="no_sleep_data">Немає записів сну\n\nУвімкніть крокомір вночі для автоматичного відстеження</string>
+    <string name="sleep_emoji">😴</string>
+</resources>
